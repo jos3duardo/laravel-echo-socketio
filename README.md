@@ -8,9 +8,13 @@
 </p>
 
 ## About Laravel
-
+```json
 composer require laravel/ui
+
+php artisan ui vue --auth
 
 php artisan make:model Models/Message -a
 
 php artisan migrate
+```
+
