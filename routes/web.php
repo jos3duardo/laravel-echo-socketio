@@ -20,7 +20,11 @@ Route::get('/', function () {
 Route::get('/messages', function (){
     return view('message');
 });
-
+Route::post('/messages', function (){
+    $data = request()->only('title','body');
+    \App\Models\Message::create($data);
+    return view('message');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

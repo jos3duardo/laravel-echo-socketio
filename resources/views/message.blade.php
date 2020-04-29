@@ -6,6 +6,8 @@
 
         <input type="text" name="title" class="form-control" placeholder="Title">
         <textarea name="body" class="form-control" id="" placeholder="Message"></textarea>
+
+        <input type="submit" class="btn btn-primary" value="Save">
     </form>
 
 @endsection
