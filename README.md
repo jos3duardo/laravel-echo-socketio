@@ -12,16 +12,48 @@
 composer require laravel/ui
 
 php artisan ui vue --auth
-
+```
 Laravel Mix
+
+```bash
 npm i
+```
 
 Running Mix
+```bash
 npm run dev
 
+```
+create a model
 
+```bash
 php artisan make:model Models/Message -a
 
 php artisan migrate
+```
+Pusher Channels
+```bash
+composer require pusher/pusher-php-server "~4.0"
+```
+
+Socket.IO
+```bash
+npm install --save socket.io-client
+```
+.env
+```bash
+BROADCAST_DRIVER=pusher
+ECHO_HOST=localhost
+ECHO_PORT=6001
+ECHO_SCHEME=http
+```
+
+config/broadcasting.php
+```json
+  'options' => [
+    'host' => env('ECHO_HOST', 'localhost'),
+    'port' => env('ECHO_PORT', 6001),
+    'scheme' => env('ECHO_SCHEME', 'http')
+  ],
 ```
 
