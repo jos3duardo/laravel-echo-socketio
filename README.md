@@ -13,6 +13,13 @@ composer require laravel/ui
 
 php artisan ui vue --auth
 
+Laravel Mix
+npm i
+
+Running Mix
+npm run dev
+
+
 php artisan make:model Models/Message -a
 
 php artisan migrate
