@@ -11,4 +11,6 @@
 
 composer require laravel/ui
 
- php artisan make:model Models/Message -a
+php artisan make:model Models/Message -a
+
+php artisan migrate
