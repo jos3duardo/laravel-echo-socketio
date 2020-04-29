@@ -23,7 +23,7 @@ Route::get('/messages', function (){
 Route::post('/messages', function (){
     $data = request()->only('title','body');
     \App\Models\Message::create($data);
-    return view('message');
+    return redirect('/message');
 });
 Auth::routes();
 
