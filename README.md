@@ -56,4 +56,32 @@ config/broadcasting.php
     'scheme' => env('ECHO_SCHEME', 'http')
   ],
 ```
+Installing Laravel Echo
+```bash
+npm install -g laravel-echo-server
+```
 
+
+```bash
+laravel-echo-server init
+```
+
+```bash
+database/laravel-echo-server.sqlite
+```
+generate appId
+```bash
+laravel-echo-server client:add realtime-laravel
+
+```
+start a laravel-echo server
+```bash
+laravel-echo-server start
+```
+
+stop a laravel-echo server
+```bash
+laravel-echo-server stop
+```
+
+npm rum watch
